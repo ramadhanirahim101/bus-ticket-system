@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "name": "Administrator"
+    },
+    {
+      "id": 2,
+      "username": "conductor",
+      "password": "bus123",
+      "role": "conductor",
+      "name": "Conductor"
+    }
+  ],
+  "routes": [
+    {
+      "id": 1,
+      "from": "Dar es Salaam",
+      "to": "Morogoro",
+      "fare": 8000
+    },
+    {
+      "id": 2,
+      "from": "Dar es Salaam",
+      "to": "Dodoma",
+      "fare": 25000
+    },
+    {
+      "id": 1790874498787,
+      "from": "tanga",
+      "to": "mwanza",
+      "fare": 60000
+    },
+    {
+      "id": 1790874682090,
+      "from": "yemen",
+      "to": "mombasa",
+      "fare": 1000000
+    }
+  ],
+  "buses": [
+    {
+      "id": 1,
+      "plate": "T 123 ABC",
+      "name": "Bus 01"
+    },
+    {
+      "id": 1790874471076,
+      "plate": "T 560 mhq",
+      "name": "hirai"
+    },
+    {
+      "id": 1790874665308,
+      "plate": "T 850 HHH",
+      "name": "Bus 04"
+    },
+    {
+      "id": 1790874825380,
+      "plate": "T 999 ZZZ",
+      "name": "Bus 02"
+    }
+  ],
+  "tickets": [
+    {
+      "id": 1002,
+      "code": "BT-1002",
+      "routeId": 1790874682090,
+      "from": "yemen",
+      "to": "mombasa",
+      "fare": 1000000,
+      "passenger": "hilary",
+      "bus": "T 123 ABC",
+      "conductor": "Conductor",
+      "status": "UNPAID",
+      "createdAt": "2026-10-01T17:12:35.474Z",
+      "paidAt": null
+    },
+    {
+      "id": 1001,
+      "code": "BT-1001",
+      "routeId": 2,
+      "from": "Dar es Salaam",
+      "to": "Dodoma",
+      "fare": 25000,
+      "passenger": "Passenger",
+      "bus": "T 123 ABC",
+      "conductor": "Conductor",
+      "status": "PAID",
+      "createdAt": "2026-10-01T17:03:06.742Z",
+      "paidAt": "2026-10-01T17:03:16.252Z"
+    }
+  ],
+  "nextTicket": 1003
+}
